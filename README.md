@@ -1,3 +1,6 @@
+## Link del repositorio
+https://github.com/jhloli43/pokemons-pichincha-exercise
+
 ## Installation
 
 ```
