@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import PokemonsLayout from "../layouts/PokemonsLayout/PokemonsLayout";
 import { API_ROUTES } from "../shared/constants/api_routes";
 import { INITIAL_POKEMON } from "../shared/constants/inital_pokemon";

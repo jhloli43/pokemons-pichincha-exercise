@@ -24,22 +24,25 @@ export default function PokemonsLayout (props: PokemonsLayoutProps) {
   } = props;
 
   return (
-    <div style={pokemonsLayoutStyles.container}>
+    <div data-testid="pokemons-layout" style={pokemonsLayoutStyles.container}>
       <span style={pokemonsLayoutStyles.title}>Listado de pokemon</span>
       <div style={pokemonsLayoutStyles.searchContainer}>
         <InputField
+          data-testid="input-search"
           icon="fa-solid fa-magnifying-glass fa-lg fa-fw"
           type="text"
           placeholder="Buscar"
           onChange={handleSearchPokemon}
         />
         <Button
+          data-testid="btn-new"
           icon="fa-solid fa-plus"
           text="Nuevo"
           onClick={handleClickAddPokemon}
         />
       </div>
       <Table
+        data-testid="table-pokemons"
         rows={rows}
         columns={columns}
         onClickDelete={onClickDelete}

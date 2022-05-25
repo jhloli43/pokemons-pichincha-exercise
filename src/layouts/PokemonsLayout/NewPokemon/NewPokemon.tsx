@@ -8,7 +8,7 @@ export default function NewPokemon (props: NewPokemonProps) {
   const { handleChange, disabledSubmit, actionType, handleCancel, handleSubmit, pokemon } = props;
 
   return (
-    <div style={newPokemonStyles.newPokemonContainer}>
+    <div data-testid="new-pokemon-section" style={newPokemonStyles.newPokemonContainer}>
       <span style={newPokemonStyles.title}>{actionType === ActionTypeEnum.ADD ? "Nuevo pokemon" : "Editar pokemon"}</span>
       <div style={newPokemonStyles.section}>
         <label style={newPokemonStyles.label}>
