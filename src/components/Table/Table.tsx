@@ -27,6 +27,7 @@ export default function Table (props: TableProps) {
                 className="fa-solid fa-image fa-lg fa-fw"
                 style={{ cursor: "pointer" }}
                 onClick={() => onClickImage(row.image)}
+                data-testid="icon-image"
               />
             </td>
             <td style={tableStyles.cell}>{row.attack}</td>
@@ -36,11 +37,13 @@ export default function Table (props: TableProps) {
                 className="fa-regular fa-pen-to-square fa-lg fa-fw"
                 style={tableStyles.icon}
                 onClick={() => onClickEdit(row)}
+                data-testid="icon-edit"
               />
               <i
                 className="fa-regular fa-trash-can fa-lg fa-fw"
                 style={trashIconStyle}
                 onClick={() => onClickDelete(row.id!)}
+                data-testid="icon-delete"
               />
             </td>
           </tr>

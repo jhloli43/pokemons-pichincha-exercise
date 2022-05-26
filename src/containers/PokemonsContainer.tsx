@@ -25,7 +25,6 @@ export default function PokemonsContainer () {
         setOriginalRows(data);
         resolve(data);
       })
-      .catch(() => reject("There are some problems"));
     })
   }
 

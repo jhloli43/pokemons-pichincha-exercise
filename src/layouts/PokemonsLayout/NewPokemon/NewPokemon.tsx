@@ -60,6 +60,7 @@ export default function NewPokemon (props: NewPokemonProps) {
       </div>
       <div style={newPokemonStyles.sectionButtons}>
         <Button
+          data-testid="btn-save"
           icon="fa-solid fa-floppy-disk"
           text="Guardar"
           style={newPokemonStyles.saveButton}
@@ -67,6 +68,7 @@ export default function NewPokemon (props: NewPokemonProps) {
           onClick={() => handleSubmit(pokemon)}
         />
         <Button
+          data-testid="btn-cancel"
           icon="fa-solid fa-xmark"
           text="Cancelar"
           onClick={handleCancel}

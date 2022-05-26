@@ -19,6 +19,7 @@ export default function Button (props: ButtonProps) {
     <button
       className="button"
       style={customStyle}
+      disabled={disabled}
       {...rest}
     >
       {icon && <i className={icon}></i>}
